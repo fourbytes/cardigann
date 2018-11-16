@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"cardigann/torznab"
+	"github.com/fourbytes/cardigann/torznab"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/headzoo/surf/browser"

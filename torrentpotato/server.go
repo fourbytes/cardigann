@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"cardigann/torznab"
+	"github.com/fourbytes/cardigann/torznab"
 )
 
 type Result struct {

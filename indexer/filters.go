@@ -11,7 +11,7 @@ import (
 	"time"
 	"unicode"
 
-	"cardigann/logger"
+	"github.com/fourbytes/cardigann/logger"
 
 	"github.com/Sirupsen/logrus"
 	"github.com/bcampbell/fuzzytime"

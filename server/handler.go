@@ -12,11 +12,11 @@ import (
 	"path"
 	"strings"
 
-	"cardigann/config"
-	"cardigann/indexer"
-	"cardigann/logger"
-	"cardigann/torrentpotato"
-	"cardigann/torznab"
+	"github.com/fourbytes/cardigann/config"
+	"github.com/fourbytes/cardigann/indexer"
+	"github.com/fourbytes/cardigann/logger"
+	"github.com/fourbytes/cardigann/torrentpotato"
+	"github.com/fourbytes/cardigann/torznab"
 
 	"github.com/Sirupsen/logrus"
 	"github.com/gorilla/mux"

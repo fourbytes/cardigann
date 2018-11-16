@@ -5,8 +5,8 @@ import (
 	"io"
 	"net/http"
 
-	"cardigann/logger"
-	"cardigann/torznab"
+	"github.com/fourbytes/cardigann/logger"
+	"github.com/fourbytes/cardigann/torznab"
 
 	"golang.org/x/sync/errgroup"
 )

@@ -9,8 +9,8 @@ import (
 	"sort"
 	"time"
 
-	"cardigann/config"
-	"cardigann/indexer"
+	"github.com/fourbytes/cardigann/config"
+	"github.com/fourbytes/cardigann/indexer"
 
 	"github.com/Sirupsen/logrus"
 	"github.com/gorilla/mux"

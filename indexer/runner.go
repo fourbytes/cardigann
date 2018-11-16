@@ -20,9 +20,9 @@ import (
 
 	"golang.org/x/net/proxy"
 
-	"cardigann/config"
-	"cardigann/logger"
-	"cardigann/torznab"
+	"github.com/fourbytes/cardigann/config"
+	"github.com/fourbytes/cardigann/logger"
+	"github.com/fourbytes/cardigann/torznab"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/Sirupsen/logrus"

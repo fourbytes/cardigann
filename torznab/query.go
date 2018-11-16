@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"cardigann/logger"
+	"github.com/fourbytes/cardigann/logger"
 )
 
 // Query represents a torznab query
