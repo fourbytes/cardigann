@@ -11,9 +11,10 @@ import (
 	"time"
 	"unicode"
 
+	"cardigann/logger"
+
 	"github.com/Sirupsen/logrus"
 	"github.com/bcampbell/fuzzytime"
-	"github.com/cardigann/cardigann/logger"
 )
 
 const (

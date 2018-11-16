@@ -1,6 +1,6 @@
 package indexer
 
-import "github.com/cardigann/cardigann/torznab"
+import "cardigann/torznab"
 
 type categoryMap map[string]torznab.Category
 

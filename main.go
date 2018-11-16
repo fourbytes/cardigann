@@ -15,12 +15,13 @@ import (
 
 	_ "net/http/pprof"
 
+	"cardigann/config"
+	"cardigann/indexer"
+	"cardigann/logger"
+	"cardigann/server"
+	"cardigann/torznab"
+
 	"github.com/Sirupsen/logrus"
-	"github.com/cardigann/cardigann/config"
-	"github.com/cardigann/cardigann/indexer"
-	"github.com/cardigann/cardigann/logger"
-	"github.com/cardigann/cardigann/server"
-	"github.com/cardigann/cardigann/torznab"
 	"github.com/equinox-io/equinox"
 	"github.com/kardianos/service"
 	"gopkg.in/alecthomas/kingpin.v2"

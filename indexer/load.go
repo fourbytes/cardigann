@@ -11,7 +11,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/cardigann/cardigann/config"
+	"cardigann/config"
 )
 
 var (

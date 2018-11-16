@@ -8,8 +8,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/cardigann/cardigann/logger"
-	"github.com/cardigann/cardigann/torznab"
+	"cardigann/logger"
+	"cardigann/torznab"
+
 	"github.com/mgutz/ansi"
 )
 

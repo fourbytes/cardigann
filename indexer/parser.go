@@ -9,8 +9,9 @@ import (
 	"strings"
 	"time"
 
+	"cardigann/torznab"
+
 	"github.com/PuerkitoBio/goquery"
-	"github.com/cardigann/cardigann/torznab"
 	"github.com/headzoo/surf/browser"
 
 	"gopkg.in/yaml.v2"

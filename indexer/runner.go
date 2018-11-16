@@ -20,11 +20,12 @@ import (
 
 	"golang.org/x/net/proxy"
 
+	"cardigann/config"
+	"cardigann/logger"
+	"cardigann/torznab"
+
 	"github.com/PuerkitoBio/goquery"
 	"github.com/Sirupsen/logrus"
-	"github.com/cardigann/cardigann/config"
-	"github.com/cardigann/cardigann/logger"
-	"github.com/cardigann/cardigann/torznab"
 	imdbscraper "github.com/cardigann/go-imdb-scraper"
 	"github.com/cardigann/releaseinfo"
 	"github.com/dustin/go-humanize"
@@ -632,7 +633,11 @@ func (r *Runner) resolveQuery(query torznab.Query) (torznab.Query, error) {
 		show, err = tvmaze.DefaultClient.GetShowWithTVRageID(query.TVRageID)
 		query.TVRageID = ""
 	case query.IMDBID != "":
-		movie, err = imdbscraper.FindByID(query.IMDBID)
+		var imdbid = query.IMDBID
+		if !strings.HasPrefix(imdbid, "tt") {
+			imdbid = "tt" + imdbid
+		}
+		movie, err = imdbscraper.FindByID(imdbid)
 		query.IMDBID = ""
 	}
 

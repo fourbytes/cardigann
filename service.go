@@ -6,8 +6,9 @@ import (
 	_ "log"
 	"os"
 
+	"cardigann/server"
+
 	"github.com/Sirupsen/logrus"
-	"github.com/cardigann/cardigann/server"
 	"github.com/kardianos/service"
 )
 

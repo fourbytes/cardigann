@@ -1,5 +1,5 @@
 BIN=cardigann
-PREFIX=github.com/cardigann/cardigann
+PREFIX=cardigann
 GOVERSION=$(shell go version)
 GOBIN=$(shell go env GOBIN)
 VERSION=$(shell git describe --tags --candidates=1 --dirty)

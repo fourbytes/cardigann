@@ -5,8 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cardigann/cardigann/config"
-	"github.com/cardigann/cardigann/torznab"
+	"cardigann/config"
+	"cardigann/torznab"
+
 	"github.com/jarcoal/httpmock"
 )
 

@@ -5,7 +5,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/cardigann/cardigann/torznab"
+	"cardigann/torznab"
 )
 
 func TestCategoryMap(t *testing.T) {

@@ -12,12 +12,13 @@ import (
 	"path"
 	"strings"
 
+	"cardigann/config"
+	"cardigann/indexer"
+	"cardigann/logger"
+	"cardigann/torrentpotato"
+	"cardigann/torznab"
+
 	"github.com/Sirupsen/logrus"
-	"github.com/cardigann/cardigann/config"
-	"github.com/cardigann/cardigann/indexer"
-	"github.com/cardigann/cardigann/logger"
-	"github.com/cardigann/cardigann/torrentpotato"
-	"github.com/cardigann/cardigann/torznab"
 	"github.com/gorilla/mux"
 )
 
@@ -241,7 +242,7 @@ func (h *handler) torznabHandler(w http.ResponseWriter, r *http.Request) {
 	t := r.URL.Query().Get("t")
 
 	if t == "" {
-		http.Redirect(w, r, r.URL.Path+"?t=caps", http.StatusTemporaryRedirect)
+		http.Redirect(w, r, r.URL.Path+"?apikey="+apiKey+"&t=caps", http.StatusTemporaryRedirect)
 		return
 	}
 

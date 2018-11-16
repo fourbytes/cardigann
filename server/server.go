@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/cardigann/cardigann/config"
-	"github.com/cardigann/cardigann/indexer"
-	"github.com/cardigann/cardigann/logger"
+	"cardigann/config"
+	"cardigann/indexer"
+	"cardigann/logger"
 )
 
 // Server is an http server which wraps the Handler
